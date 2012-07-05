@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3581502A-BD22-42E6-8D5D-1FA75EAC8867}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Item2Word</RootNamespace>
+    <AssemblyName>Item2Word</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layouts\SoftArtisans\Item2Word\Gen.aspx.cs">
+      <DependentUpon>Gen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SoftArtisans\Item2Word\Gen.aspx.designer.cs">
+      <DependentUpon>Gen.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SoftArtisans\Item2Word\Item2Word.aspx.cs">
+      <DependentUpon>Item2Word.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SoftArtisans\Item2Word\Item2Word.aspx.designer.cs">
+      <DependentUpon>Item2Word.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0e0b3e2-0085-439d-b941-33083b48731a}</SharePointProjectItemId>
+    </None>
+    <None Include="Item2Word\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{25c563be-3cc3-47bb-b037-dfc447edeb7c}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Item2Word\Item2Word.feature">
+      <FeatureId>{5dafb1d6-a549-4ac1-b268-4ae2f2bc3911}</FeatureId>
+    </None>
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2149f2d-217b-4249-a1f2-4c017a67cc6b}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\SoftArtisans\Item2Word\template\OfficeWriterStarterTemplate.doc" />
+    <None Include="Package\Package.package">
+      <PackageId>{a20cb6a6-0567-4240-9e63-43b8940c9842}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\SoftArtisans\icons\FeatureIcon.png" />
+    <Content Include="Images\SoftArtisans\icons\wwsm.png" />
+    <Content Include="Item2Word\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\Item2Word\Item2Word.Template.xml">
+      <DependentUpon>Item2Word.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\SoftArtisans\Item2Word\Gen.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\SoftArtisans\Item2Word\Item2Word.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

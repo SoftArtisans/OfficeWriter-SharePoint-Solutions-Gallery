@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a20cb6a6-0567-4240-9e63-43b8940c9842" solutionId="a20cb6a6-0567-4240-9e63-43b8940c9842" resetWebServer="false" name="Word Export Plus" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="SoftArtisans.OfficeWriter.WordWriter.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="SoftArtisans.OfficeWriter.WordWriter.dll" />
+    <customAssembly location="SoftArtisans.OfficeWriter.WordWriter.SharePointIntegration.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="SoftArtisans.OfficeWriter.WordWriter.SharePointIntegration.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="5dafb1d6-a549-4ac1-b268-4ae2f2bc3911" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="d2149f2d-217b-4249-a1f2-4c017a67cc6b" />
+    <projectItemReference itemId="b0e0b3e2-0085-439d-b941-33083b48731a" />
+  </projectItems>
+</package>

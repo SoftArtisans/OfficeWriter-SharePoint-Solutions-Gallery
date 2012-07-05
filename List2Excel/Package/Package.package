@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="11cfd43d-f188-4176-a578-7516ff1b6954" solutionId="11cfd43d-f188-4176-a578-7516ff1b6954" resetWebServer="false" name="Excel Export Plus" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="SoftArtisans.OfficeWriter.ExcelWriter.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="bin\Release\SoftArtisans.OfficeWriter.ExcelWriter.dll" />
+    <customAssembly location="SoftArtisans.OfficeWriter.ExcelWriter.SharePointIntegration.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="bin\Release\SoftArtisans.OfficeWriter.ExcelWriter.SharePointIntegration.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="2c6b056e-c298-46ad-8b71-e91fb8c89186" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="14305f69-5108-414b-a164-7abc611c1ac7" />
+    <projectItemReference itemId="5fd1872e-cb0e-453c-8425-ba1724bc4ea2" />
+  </projectItems>
+</package>

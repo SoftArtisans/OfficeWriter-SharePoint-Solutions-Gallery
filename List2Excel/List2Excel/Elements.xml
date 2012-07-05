@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="List2ExcelAdminLink"
+        GroupId="Customization"
+        Location="Microsoft.SharePoint.SiteSettings"
+        Sequence="1000"
+        Title="OfficeWriter Solution: Excel Export Plus">
+    <UrlAction Url="~site/_layouts/SoftArtisans/List2Excel/List2Excel.aspx"/>
+  </CustomAction>
+</Elements>
