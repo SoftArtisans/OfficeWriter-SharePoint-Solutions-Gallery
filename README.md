@@ -11,7 +11,7 @@ Excel Export Plus enables exporting list data to a full-featured Excel template.
 
 Both solutions depend on OfficeWriter therefore you will have to add references to OfficeWriter to your projects.
 
-An Evaluation of OfficeWriter can be downloaded at: http://www.officewriter.com/officewriter-free- evaluation-b.aspx 
+An Evaluation of OfficeWriter can be downloaded at: http://www.officewriter.com/officewriter-free-evaluation.aspx 
 
 The full documentation for both solutions can be found at: http://wiki.softartisans.com/display/Docs/OfficeWriter+Docs   
 
